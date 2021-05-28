@@ -1,0 +1,43 @@
+.navbar {
+  outline: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 0 2rem;
+  flex-wrap: wrap;
+  height: fit-content;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.nav__links {
+  padding: 1rem;
+  a {
+    padding: 1rem;
+    margin: 1rem;
+  }
+}
+
+.nav__items {
+  display: flex;
+  padding: 1rem;
+  .nav__item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    svg {
+      font-size: 1.5rem;
+      margin: 0 1rem;
+    }
+  }
+}
+
+.nav__mobile {
+  display: none;
+}
