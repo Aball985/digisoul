@@ -1,8 +1,11 @@
-import React from "react";
+import styles from "./Homepage.module.scss";
+import Hero from "../../components/Hero/Hero.components";
+import Mosaic from "../../components/Mosaic/Mosaic.component";
 export default function Homepage() {
   return (
-    <div>
-      <h1>Home</h1>
+    <div className={styles.homepage}>
+      <Hero />
+      <Mosaic />
     </div>
   );
 }
