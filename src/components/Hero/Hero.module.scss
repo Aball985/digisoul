@@ -1,18 +1,21 @@
 .hero {
   height: 750px;
-  background-image: url("../../images/hero.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #000;
   display: flex;
+  justify-content: center;
   align-items: flex-start;
 }
 
 .hero__text {
-  margin: 2rem 0;
-  padding: 1rem;
+  position: relative;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   h1 {
-    font-weight: 900;
-    font-size: 5rem;
+    font-weight: 300;
+    font-size: 3.5rem;
     color: #fff;
   }
   span {
@@ -22,15 +25,23 @@
 }
 
 .span__border {
-  border-left: 2rem solid black;
+  border-left: 2rem solid #fff;
   padding-left: 1rem;
-  width: fit-content;
+  background-color: rgba(255, 255, 255, 0.048);
 }
 
 .fancy {
   font-size: 5rem !important;
-  font-weight: 400 !important;
+  font-weight: 900 !important;
   font-style: italic;
   letter-spacing: 1rem;
-  text-decoration: 4px solid dashed black;
+}
+
+.video {
+  position: absolute;
+  height: 750px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  border-radius: 4px;
 }

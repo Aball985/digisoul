@@ -1,0 +1,24 @@
+.showcase {
+  max-width: 1400px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+  h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-weight: 400;
+  }
+}
+.container {
+  background-color: #1d1d1d;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 1rem;
+  gap: 24px;
+}
+.showcase-text {
+  padding: 1rem;
+}

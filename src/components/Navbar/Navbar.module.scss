@@ -13,15 +13,18 @@
 
 .logo {
   font-size: 2.5rem;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 0.5rem;
   text-transform: uppercase;
+  a {
+    color: #fff;
+  }
 }
-
 .nav__links {
   padding: 1rem;
   font-size: 1rem;
   a {
+    color: #fff;
     padding: 1rem;
     margin: 1rem;
     &:hover {
