@@ -5,11 +5,9 @@ import {
   GiHamburgerMenu,
 } from "react-icons/all";
 import { Link } from "react-router-dom";
+import Login from "../LoginModal/Login.component";
 
 export default function Navbar() {
-  const handleMobileClick = () => {
-    console.log("CLicked");
-  };
   return (
     <div className={styles.container}>
       <div className={styles.navbar}>
@@ -24,9 +22,7 @@ export default function Navbar() {
           <Link to="/jackets">Jackets</Link>
           <Link to="/hoodies">Hoodies</Link>
           <Link to="/misc">Misc</Link>
-          <a href="/#">
-            <strong>Sign In</strong>
-          </a>
+          <Login />
         </div>
 
         {/* Items */}
@@ -39,7 +35,7 @@ export default function Navbar() {
             <RiShoppingCartLine />
             <p>Cart</p>
           </div>
-          <div className={styles.nav__mobile} onClick={handleMobileClick}>
+          <div className={styles.nav__mobile}>
             <GiHamburgerMenu />
           </div>
         </div>

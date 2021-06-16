@@ -1,8 +1,8 @@
-import Homepage from "./pages/Homepage/Homepage.component";
 import styles from "./App.module.scss";
 import Navbar from "./components/Navbar/Navbar.component";
-import { Switch, Route } from "react-router-dom";
+import { Switch } from "react-router-dom";
 import { Scrollbars } from "react-custom-scrollbars";
+import Routes from "./components/Routes/Routes";
 
 const renderThumb = () => {
   const thumbStyle = {
@@ -27,9 +27,7 @@ export default function App() {
       <div className={styles.App}>
         <Navbar />
         <Switch>
-          <Route path="/">
-            <Homepage />
-          </Route>
+          <Routes />
         </Switch>
       </div>
     </Scrollbars>
